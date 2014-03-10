@@ -9,6 +9,11 @@ html
     link href="css/normalize.css" rel="stylesheet" 
     link href="css/main.css" rel="stylesheet" 
     link href="css/folio.css" rel="stylesheet"
+    link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'
+
+    link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen"
+    / link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen"
+
   body
 
     .heading
@@ -21,12 +26,6 @@ html
       li
         a href="#projects"
           | Projects
-      li
-        a href="#skills"
-          | Skills
-      li
-        a href="#hobby"
-          | Spare time
       li
         a href="#contacts"
           | Contacts
@@ -44,7 +43,16 @@ html
           tbody
             tr
               td
-                img src="./img/izi_thumb.jpg"
+                .thumb
+                  a href="./img/izi.jpg" rel="work1"
+                    img src="./img/izi_thumb.jpg"
+                  a.hidden href="./img/izi2.jpg" rel="work1"
+                    img src="./img/izi_thumb.jpg"
+                  .overlay
+                    | jQuery, AngularJS, NodeJS, SASS, Slim, CoffeeScript
+                    br
+                    a.button href="#"
+                      | View
               td
                 h3
                   | IZI.CMS - Mobile audioguide CMS
@@ -61,7 +69,14 @@ html
                 | &nbsp;(user/password pman/177591)
             tr
               td
-                img src="./img/emul_thumb.jpg"
+                .thumb
+                  a href="./img/emul.jpg" rel="work2"
+                    img src="./img/emul_thumb.jpg"
+                  .overlay
+                    | jQuery, SASS, Slim, CoffeeScript
+                    br
+                    a.button href="#"
+                      | View
               td
                 h3
                   | IZI.Travel - mobile device emulator prototype
@@ -72,7 +87,16 @@ html
                 | - choose russian language and click play.
             tr
               td
-                img src="./img/kpb_thumb.jpg"
+                .thumb
+                  a href="./img/kpb.jpg" rel="work3"
+                    img src="./img/kpb_thumb.jpg"
+                  a.hidden href="./img/kpb2.jpg" rel="work3"
+                    img src="./img/kpb_thumb.jpg"
+                  .overlay
+                    | jQuery, SCSS, HAML, CoffeeScript
+                    br
+                    a.button href="#"
+                      | View
               td
                 h3
                   | Kupibilet.ru
@@ -81,10 +105,16 @@ html
                 | Mechanics of selecting flight was similar to google flights - so flight segments were stacking to each other by entering hierarchy tree structure.
                 br
                 | Project was split for two parts - Rails backend with JSON api and Rails FrontEnd project. Scripting were done in CoffeeScropt, markup in HAML and SCSS.
-
             tr
               td
-                img src="./img/darttrip_thumb.jpg"
+                .thumb
+                  a href="./img/darttrip.jpg" rel="work4"
+                    img src="./img/darttrip_thumb.jpg"
+                  .overlay
+                    | jQuery, AngularJS, NodeJS, SCSS, HAML, CoffeeScript
+                    br
+                    a.button href="#"
+                      | View
               td
                 h3
                   | DartTrip 
@@ -92,10 +122,18 @@ html
                 br
                 a href="http://darttrip.com/#AMS"
                   |  http://darttrip.com/#AMS
-
             tr
               td
-                img src="./img/bright_thumb.jpg"
+                .thumb
+                  a href="./img/bright.jpg" rel="work5"
+                    img src="./img/bright_thumb.jpg"
+                  a.hidden href="./img/bright2.jpg" rel="work5"
+                    img src="./img/bright_thumb.jpg"
+                  .overlay
+                    | jQuery, AngularJS, NodeJS, SCSS, HAML, CoffeeScript
+                    br
+                    a.button href="#"
+                      | View
               td
                 h3
                   | "Яркий мир" - online photo equipment stock
@@ -104,6 +142,36 @@ html
                 a href="http://darttrip.com/#AMS"
                   |  http://darttrip.com/#AMS
 
+      hr
+
+      #contacts
+        table.contacts
+          tbody
+            tr
+              td
+                | Skype:
+              td
+                | pman89
+            tr
+              td
+                | E-mail:
+              td
+                a href="mailto:pman89@ya.ru"
+                  | pman89@ya.ru
+            tr
+              td
+                | GitHub:
+              td
+                a href="https://github.com/pomahtuk"
+                  | https://github.com/pomahtuk
+            tr
+              td
+                | LinkedIn: &nbsp;
+              td
+                a href="http://www.linkedin.com/in/pman89"
+                  | http://www.linkedin.com/in/pman89
 
     script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+    script type="text/javascript" src="./js/jquery.fancybox.js?v=2.1.5"
+    / script type="text/javascript" src="./js/jquery.fancybox-buttons.js?v=1.0.5"
     script src="js/main.js"
