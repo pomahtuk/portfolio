@@ -77,8 +77,27 @@ h3 {
 
 .container {
   background: rgba(255, 255, 255, 0.7);
-  width: 920px;
+  width: 900px;
   padding: 20px;
   border-radius: 10px;
   margin: 0 auto;
+}
+
+.container table tr {
+  padding: 5px 0px;
+}
+
+.container table tr td {
+  padding: 10px;
+  line-height: 20px;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.container table tr td h3 {
+  margin-top: 0px;
+}
+
+.container table tr td img {
+  width: 150px;
 }
